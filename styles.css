@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #adbac7;
+  background-color: #1c2128;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 50px auto;
+}
+
+.sidebar {
+  /* background-color: #22272e; */
+  padding-right: 40px;
+}
+
+.primary {
+  flex: 1;
+}
+
+.square {
+  border: 1px solid skyblue;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+}
+
+.bg-gray {
+  background-color: slategray;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fd-row {
+  flex-direction: row;
+}
+
+@media screen and (min-width: 1170px) {
+  .wrapper {
+    width: 1170px;
+  }
+}
