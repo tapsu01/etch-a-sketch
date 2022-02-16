@@ -6,6 +6,7 @@
 body {
   color: #adbac7;
   background-color: #1c2128;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -15,12 +16,15 @@ body {
 }
 
 .sidebar {
-  /* background-color: #22272e; */
   padding-right: 40px;
 }
 
 .primary {
   flex: 1;
+}
+
+.btn-reset {
+  padding: 4px 12px;
 }
 
 .square {
@@ -34,12 +38,24 @@ body {
   background-color: slategray;
 }
 
+.group {
+  margin-bottom: 12px;
+}
+
 .d-flex {
   display: flex;
 }
 
 .fd-row {
   flex-direction: row;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.w-fit {
+  width: 100%;
 }
 
 @media screen and (min-width: 1170px) {

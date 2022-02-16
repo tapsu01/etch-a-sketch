@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>ETCH-A-SKETCH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="wrapper">
       <aside class="sidebar">
-        <input type="range" min="1" max="64" value="16" id="slider-range" />
-        <p id="grid-size-output">Grid size: <span></span></p>
+        <div class="group">
+          <input
+            type="color"
+            id="hover-color"
+            class="hover-color w-fit"
+            name="hover-color"
+            value="#708090"
+          />
+        </div>
+        <div class="group">
+          <p class="ta-center" id="grid-size-output"><span></span></p>
+          <input type="range" min="1" max="64" value="16" id="slider-range" />
+        </div>
+        <div class="group ta-center">
+          <button class="btn-reset" type="button">Reset</button>
+        </div>
       </aside>
       <div class="primary"></div>
     </div>

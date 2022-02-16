@@ -1,11 +1,19 @@
 const container = document.querySelector('.primary');
 const sliderRange = document.querySelector('#slider-range');
 const gridSizeOutput = document.querySelector('#grid-size-output');
+const btnReset = document.querySelector('.btn-reset');
+const hoverCover = document.querySelector('.hover-color');
 let grid = sliderRange.value;
 
 sliderRange.addEventListener('input', function () {
   grid = this.value;
   showGridSize();
+});
+
+btnReset.addEventListener('click', function () {
+  document.querySelectorAll('.square').forEach(function (el) {
+    el.style.backgroundColor = 'transparent';
+  });
 });
 
 sliderRange.addEventListener('change', init);
@@ -37,7 +45,7 @@ function addGridItemEvent() {
   const squares = document.querySelectorAll('.square');
   squares.forEach(function (el) {
     el.addEventListener('mouseover', function () {
-      this.classList.add('bg-gray');
+      this.style.backgroundColor = hoverCover.value;
     });
   });
 }
